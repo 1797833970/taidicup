@@ -1,0 +1,23 @@
+# Python 相关
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# 编辑器和系统文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 环境文件
+venv/
+env/
+.env
+*.env
+
+# 日志文件
+*.log
+
