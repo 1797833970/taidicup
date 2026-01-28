@@ -11,23 +11,27 @@
 ## 📂 目录结构
 ```
 taidicup/
-├── question1/           # 问题一相关文件
-│   ├── build_model.ipynb     # 模型构建与训练
-│   ├── creative_model.ipynb  # 创新模型(经验学习&增量学习)实现
-│   ├── data_process.ipynb    # 数据预处理
-│   └── 问题一.md            # 问题一详细说明
-├── question2/           # 问题二相关文件
-│   ├── statistics.ipynb      # 问题二主实现
-│   └── 问题二.md            # 问题二详细说明
-├── question3/           # 问题三相关文件
-│   ├── analysis.ipynb        # 分析实现
-│   ├── 生产线可视化分析.pdf     # 可视化分析报告
-│   └── 问题三.md            # 问题三详细说明
-├── src/                # 资源文件
-├── .gitignore          # Git忽略文件
+├── question1/                         
+│   ├── build_model.ipynb              # 模型构建与训练
+│   ├── creative_model.ipynb           # 创新模型（经验学习 & 增量学习）
+│   ├── data_process.ipynb             # 数据预处理
+│   └── 问题一.md                       # 问题一详细说明
+├── question2/                         
+│   ├── statistics.ipynb               # 问题二主实现
+│   └── 问题二.md                       # 问题二详细说明
+├── question3/                         
+│   ├── analysis.ipynb                 # 分析实现
+│   ├── 生产线可视化分析.pdf              # 可视化分析报告
+│   └── 问题三.md                       # 问题三详细说明
+├── question4/                         
+│   ├── Goal_programming_model.ipynb   # 目标规划模型实现
+│   ├── 生产线排班方案（目标规划）.pdf     # 排班方案报告
+│   └── 问题四.md                       # 问题四详细说明
+├── src/
+├── .gitignore
 ├── A题-生产线的故障自动识别与人员配置.pdf  # 赛题说明文档
-├── README.md           # 项目说明文档
-└── requirements.txt    # 依赖文件
+├── README.md                          # 项目说明文档
+└── requirements.txt
 ```
 
 ## 🎯 核心功能
@@ -68,6 +72,11 @@ taidicup/
 - **关联分析**：利用散点图分析故障发生时间与次品出现时间的对应关系
 - **构成分析**：通过堆叠图分析不同工龄下各类故障持续时间的构成情况
 - **回归分析**：构建多元线性回归模型，分析各因素对产量和合格率的影响
+
+### 6. 人员配置优化
+- **目标规划模型**：建立多目标优化模型，平衡生产效率、人员利用率和成本
+- **约束条件处理**：考虑人员技能水平、工作时间限制、生产线需求等约束
+- **排班方案生成**：基于目标规划模型，生成最优的生产线人员排班方案
 
 ## 📊 实验结果
 
@@ -113,6 +122,7 @@ pip install -r requirements.txt
 3. **创新方案**：运行 `question1/creative_model.ipynb` 实现经验学习和增量学习
 4. **故障报警统计**：运行 `question2/statistics.ipynb` 实现故障自动报警统计和平滑处理
 5. **可视化分析**：运行 `question3/analysis.ipynb` 实现生产线、人员与故障的可视化分析
+6. **人员配置优化**：运行 `question4/Goal_programming_model.ipynb` 实现目标规划模型和人员排班方案
 
 ## 💡 技术亮点
 
@@ -124,6 +134,7 @@ pip install -r requirements.txt
 6. **故障报警统计**：实现故障自动即时报警，生成格式化的报警信息
 7. **可视化分析**：多维度可视化分析生产线、人员与故障的关系，为生产管理提供数据支持
 8. **统计建模**：通过多元线性回归模型量化各因素对产量和合格率的影响
+9. **目标规划模型**：建立多目标优化模型，平衡生产效率、人员利用率和成本
 
 ## 🤝 致谢
 感谢泰迪杯组委会提供的竞赛平台和数据集
